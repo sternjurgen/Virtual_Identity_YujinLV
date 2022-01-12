@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Virtual Identity | INTERNETA VEIKALS </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet"/>
+    
+    <meta name="author" content="Jurģis Šterns">
+    <meta name="keywords" content="gramata. drukas darbi. apdruka. interjers">
+    <meta description="description" content="Jūdžins. grafiskā novele. komiksi. apdruka. plakāti.">
+  </head>
+
+  <nav>
+    <!-- Lejupkrītoša izvēlne -->
+      <label for="izvele">Izvēlieties valodu:</label>
+      <select name="izvele" id="izvele">
+        <!-- Izvēles elementu grupēšana -->
+        <optgroup label="Valoda">
+          <!-- Izvēles elementi/varianti -->
+          <option value="latviesu_language" selected>Latviešu</option>
+          <option value="english_language">English</option>
+          <option value="russian_language">Pусский</option>
+          <option value="lithuanian_language">Lietuviu</option>
+        </optgroup>
+        </select>
+        <input type="button" value="Mainīt valodu" id="ievade1" onclick="mainitValodu()">
+        <scipt src="formas.js"></scipt>
+  </nav>
+  <nav>
+    <script src="datums.js"></script>
+    <script src="datums.vardiem.js"></script>
+  </nav>
+
+  <hr>
+  
+  <nav>
+  <ul>
+    <ol class="hori"> <!-- Saraksta elements (list item) --> 
+    <li class="hori"><a href="index.html" target="_blank">GALVENĀ LAPA</a></li>
+    <li class="hori"><a href="Pakalpojumi.html" target="_new">PAKALPOJUMI</a></li>
+    <li class="hori"><a href="Praktiskie_darbi.html" target="hori">INTERNETA VEIKALS</a></li>
+    <li class="hori"> <a href="yujin.html">GRAFISKAIS STĀSTS</a></li>
+    <li class="hori"> <a href="Kontakti.html">KONTAKTI</a></li>
+    <li class="hori"> <a href="Blogs.html">AKCIJAS</a></li>
+    </ol>
+  </ul>
+  
+  </nav>
+  <hr>
+
+  <body>
+    <h2>INTERNETA VEIKALS</h2>
+    
+
+    <!-- Komentārs -->
+<!--<!DOCTYPE html> <!-- Nosaka dokumenta tipu -->
+<!--<html> <!-- dokumenta sakne -->
+<!--  <head> <!-- Dokumenta galveni -->
+<!-- <title>SIA "Virtual Identity" interneta veikals</title>
+  </head>
+  <!-- Lapas saturs -->
+  <!--<body>
+    <!-- Forma ļauj ievadīt datus no klaviatūras vai izvadīt no datubāzes/faila/funkcijas... -->
+    <!--
+      <form method="get/post" action="formas_izpilde.php">
+        Formas saturs
+      </form>
+      Pilnos atribūtu lietosim pie PHP.
+    -->
+
+    <h3>Laipni lūdzam SIA "Virtual Identity" interneta veikalā! </h3>
+         
+    <p> <i> <sup>*SIA "Virtual Identity" nodrošina grafiskā stāsta par Jūdžinu tirdzniecību </sup> </i> </p>
+    <h5>
+      <i>Jūdžins: Virtuāls Ceļojums Cilvēka Organismā (Jurģis ŠTERNS) </i>
+      <br><i>Yujin: The Dream that He Embodies - the Perfection of Memory (a renowned memory textbook) (Jurgis STERNS)</i>
+    </h5>
+
+    <h4> Lai iegādātos grafisko stāstu par Jūdžinu un citus mūsu produktus, lūdzam norādīt nepieciešamos datus un aizpildīt formu pasūtījuma veikšanai! </h4>
+      
+   
+
+    
+
+    
+  
+
+
+
+    <form id="forma1">
+      <br>
+      <!-- Teksta ievades lauks -->
+      <label for="name">vārds:</label> <!-- Lauka nosaukums -->
+      <input type="text" id="vards" name="name" required autocomplete="off">
+      <br>
+      <br>
+      <!-- Teksta ievades lauks -->
+      <label for="name">uzvārds:</label> <!-- Lauka nosaukums -->
+      <input type="text" id="uzvards" name="name" required autocomplete="off">
+      <br>
+      <br>
+      <!-- Paroles lauks -->
+      <!-- 
+        <label for="password">Parole:</label>
+      <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+      <!-- Pattern izmantošanai nepieciešams RegEx (regular expression).
+      https://regexr.com/
+      Vismaz 8 rakstzīmes, mazie burti, lielie burti, vismaz 1 cipars.
+      Cipara pārbaude - (?=.*\d)
+      Mazie burti     - (?=.*[a-z])
+      Lielie burti    - (?=.*[A-Z])
+      8 rakstzīmes    - .{8,}
+      -->
+      
+      <!-- Epasta lauks -->
+      <label for="email">e-pasts:</label>
+      <input type="email" id="epasts" name="email" required>
+      <br>
+      <br>
+      <!-- Ievades lauku grupēšana -->
+      <fieldset style="width: 210px;" class ="dzimums">
+        <legend>Dzimums</legend> <!-- Fieldset nosaukums -->
+        <!-- Radio pogas -->
+        <label for="virietis">vīrietis</label>
+        <input type="radio" id="virietis" name="gender" value="virietis" class="radiovirietis">
+        <label for="sieviete">sieviete</label>
+        <input type="radio" id"sieviete" name="gender" value="sieviete" class="radiosieviete">
+      </fieldset>
+      <br>
+      
+      <!--<br>
+      <label for="Grafiskais stasts">1.DAĻA: IDENTITĀTES MEKLĒJUMOS VASARAS TVEICĒ </label>
+      <input type="checkbox" id="Grafiskais stasts" value="RaditDalas" onclick="RaditGramatu()">
+      <br> -->
+      
+      
+      <!-- Lejupkrītoša izvēlne -->
+      <p> <b> PRODUKTA IZVĒLE: </b> </p>
+      <!--<select name="izvele" id="izvele">
+        <!-- Izvēles elementu grupēšana -->
+        <!--<optgroup label="Grafiskais stāsts" class ="virspuse">
+        <optgroup label="Jūdžins: Virtuāls Ceļojums Cilvēka Organismā" class ="virspuse"> -->
+          <!-- Izvēles elementi/varianti -->
+          <p> <b> Grafiskais stāsts </b> 
+          <!-- <br> <b> Jūdžins: Virtuāls Ceļojums Cilvēka Organismā </b> -->
+          <br>
+          <button onclick="RaditDalas()">Jūdžins: Virtuāls Ceļojums Cilvēka Organismā</button> </p>
+          <script src="interneta_veikals.js"></script>
+
+          <div id="yujinDalas" value="yujin"> <input type="checkbox" id="Grafiskais stasts"  onclick="RaditDalas()"> 1.DAĻA: IDENTITĀTES MEKLĒJUMOS VASARAS TVEICĒ <br> <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10"> 
+
+            <br> <input type="checkbox" id="Grafiskais stasts"  onclick="RaditDalas()"> 2.DAĻA: ĢIMNĀZIJAS IKDIENA UN JAPĀŅU VALODAS STUDIJAS <br> <label for="number"> skaits:</label> <input type="number" id="number" name="number" min="0" max="10"> 
+            
+            <br> <input type="checkbox" id="Grafiskais stasts"  onclick="RaditDalas()"> 3.DAĻA: KALNU IELEJU SNIEGA VALSTĪBA <br> <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10"> 
+            
+            <br> <input type="checkbox" id="Grafiskais stasts"  onclick="RaditDalas()"> 4.DAĻA: PAVASARA KAISLĪBAS ĢIMNĀZIJĀ <br> <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+
+            <br> <input type="checkbox" id="Grafiskais stasts"  onclick="RaditDalas()"> 5.DAĻA: BRĪVDIENU NEGAIDĪTĀ EKSKURSIJA <br> <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+            
+            <br> <input type="checkbox" id="Grafiskais stasts"  onclick="RaditDalas()"> 6.DAĻA: FILMU REŽISORU PILSĒTA <br> <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+            
+            <br>
+            <br> 7.DAĻA: VISPASAULES JAUNIEŠU NOMETNE <br> <sup> <i>vizuālais materiāls izstrādes stadijā</i> </sup>
+            <br> 8.DAĻA: CEĻOJUMS UZ JAPĀNU <br> <sup> vizuālais materiāls izstrādes stadijā</i> </sup>
+            <br> 9.DAĻA: RADINIEKU APCIEMOŠANA <br> <sup> <i>vizuālais materiāls izstrādes stadijā</i> </sup>
+            <br> 10.DAĻA: DARBS UN SADZĪVE JAPĀNĀ <br> <sup> <i>vizuālais materiāls izstrādes stadijā </sup>
+          </div>
+
+          <label for="AkcijasKods">Atlaides kods: <br> </label> <input type="text" id="text" name="text" min="0" max="20">
+          <br> <br>
+          
+
+
+
+          
+
+          <!--<label for="Grafiskais stasts" value="RaditDalas">1.DAĻA: IDENTITĀTES MEKLĒJUMOS VASARAS TVEICĒ </label>
+          <input type="checkbox" id="Grafiskais stasts" value="RaditDalas" onclick="RaditGramatu()"> <br>
+          <label for="judzinsD2">2.DAĻA: ĢIMNĀZIJAS IKDIENA UN JAPĀŅU VALODAS STUDIJAS </label>
+          <input type="checkbox" id="Grafiskais stasts" value="RaditDalas" onclick="RaditGramatu()"> <br>
+          <label for="judzinsD3">3.DAĻA: KALNU IELEJU SNIEGA VALSTĪBA </label>
+          <input type="checkbox" id="Grafiskais stasts" value="RaditDalas" onclick="RaditGramatu()"> <br>
+          <label for="judzinsD4">4.DAĻA: PAVASARA KAISLĪBAS ĢIMNĀZIJĀ </label>
+          <input type="checkbox" id="Grafiskais stasts" value="RaditDalas" onclick="RaditGramatu()"> <br>
+          <label for="judzinsD5">5.DAĻA: BRĪVDIENU NEGAIDĪTĀ  </label>
+          <input type="checkbox" id="Grafiskais stasts" value="RaditDalas" onclick="RaditGramatu()"> <br>
+          <label for="judzinsD6">6.DAĻA: FILMU REŽISORU PILSĒTA </label>
+          <input type="checkbox" id="Grafiskais stasts" value="RaditDalas" onclick="RaditGramatu()"> <br> <br> -->
+
+          <!-- <label for="judzinsD7">7.DAĻA: VISPASAULES JAUNIEŠU NOMETNE <br> <sup> <i>vizuālais materiāls izstrādes stadijā</i> </sup> </label> <br>
+          <label for="judzinsD8">8.DAĻA: CEĻOJUMS UZ JAPĀNU <br> <sup> vizuālais materiāls izstrādes stadijā</i> </sup> </label>  <br>
+          <label for="judzinsD9">9.DAĻA: RADINIEKU APCIEMOŠANA <br> <sup> <i>vizuālais materiāls izstrādes stadijā</i> </sup> </label> <br>
+          <label for="judzinsD10">10.DAĻA: DARBS UN SADZĪVE JAPĀNĀ <br> <sup> <i>vizuālais materiāls izstrādes stadijā</i> </sup> </label> <br>
+          <br> 
+
+
+
+          <!--<option value="judzinsD2">*2.DAĻA: ĢIMNĀZIJAS IKDIENA UN JAPĀŅU VALODAS STUDIJAS</option>
+          <option value="judzinsD3">3.DAĻA: KALNU IELEJU SNIEGA VALSTĪBA </option>
+          <option value="judzinsD4">4.DAĻA: PAVASARA KAISLĪBAS ĢIMNĀZIJĀ </option>
+          <option value="judzinsD5">5.DAĻA: BRĪVDIENU NEGAIDĪTĀ EKSKURSIJA </option>
+          <option value="judzinsD6">6.DAĻA: FILMU REŽISORU PILSĒTA </option> -->
+
+        <!--</optgroup> -->
+        <!--
+        <optgroup label="Vizuālais materiāls izstrādes stadijā" font="italic">
+          <option value="judzinsD7" style="color:red;">7.DAĻA: VISPASAULES JAUNIEŠU NOMETNE</option>
+          <option value="judzinsD8" style="color:red;">8.DAĻA: CEĻOJUMS UZ JAPĀNU </option>
+          <option value="judzinsD9" style="color:red;">9.DAĻA: RADINIEKU APCIEMOŠANA </option>
+          <option value="judzinsD10" style="color:red;">10.DAĻA: DARBS UN SADZĪVE JAPĀNĀ</option>
+        </optgroup> -->
+        
+
+
+        <p> <b> Drukas darbi </b> 
+          <br>
+          <button onclick="RaditTipografija()">Iespieddarbi</button> </p>
+          <script src="interneta_veikals1.js"></script>
+          
+            <div id="tipografija" value="tipografija"> <input type="checkbox" id="tipografija"  onclick="RaditTipografija()"> Krāsojamā grāmata <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="15">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+
+            <br><input type="checkbox" id="tipografija"  onclick="RaditTipografija()"> Kalendārs <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="15">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+
+
+            <br> <input type="checkbox" id="tipografija"  onclick="RaditTipografija()"> Plakāts <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="15">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+            
+            <br> <input type="checkbox" id="tipografija"  onclick="RaditTipografija()"> Uzlīmes <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="15">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+
+          </div>
+          <br>
+        
+          <label for="AkcijasKods">Atlaides kods: <br> </label> <input type="text" id="text" name="text" min="0" max="20">
+          <br> <br>
+        
+        <p> <b>Apdruka</b>
+        <br>
+        <button onclick="RaditApdrukaApgerbs()">Apģērbs</button>
+        </p>
+        <script src="interneta_veikals2.js"></script>
+
+        <div id="apdrukaApgerbs" value="apdrukaApgerbs"> <input type="checkbox" id="apdrukaApgerbs"  onclick="RaditApdrukaApgerbs()"> Bikses <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="5">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+            
+            <br> <input type="checkbox" id="apdrukaApgerbs"  onclick="RaditApdrukaApgerbs()"> Krekls <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="5">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+
+            <br><input type="checkbox" id="apdrukaApgerbs"  onclick="RaditApdrukaApgerbs()"> Džemperis <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="5">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10"> 
+            
+            <br> <input type="checkbox" id="apdrukaApgerbs"  onclick="RaditApdrukaApgerbs()"> Aksesuāri <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="5">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+
+            <br> <input type="checkbox" id="apdrukaApgerbs"  onclick="RaditApdrukaApgerbs()"> Cepure <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="5">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+
+            <br> <input type="checkbox" id="apdrukaApgerbs"  onclick="RaditApdrukaApgerbs()"> Trauki <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="5">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+
+            
+          </div>
+          <br>
+          
+          <label for="AkcijasKods">Atlaides kods: <br> </label> <input type="text" id="text" name="text" min="0" max="20">
+      <br> <br>
+
+
+        <button onclick="RaditInterjers()">Interjers</button>
+        </p>
+        <script src="interneta_veikals3.js"></script>
+
+        <div id="apdrukaInterjers" value="apdrukaInterjers"> <input type="checkbox" id="apdrukaInterjers"  onclick="RaditInterjers()"> Tapetes <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="5">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+            
+            <br> <input type="checkbox" id="apdrukaInterjers"  onclick="RaditInterjers()"> Aizkari <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="5">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10">
+
+            <br><input type="checkbox" id="apdrukaInterjers"  onclick="RaditInterjers()"> Žalūzijas <br>
+            <label for="number">izmērs:</label> <input type="text" id="text" name="text" min="0" max="5">
+            <label for="number">skaits:</label> <input type="number" id="number" name="number" min="0" max="10"> 
+        </div>
+        <br>
+        <br>
+          
+      
+      <!-- Lielāks teksta lauks -->
+      <label for="textarea">Vēstules teksts:</label>
+      <textarea id="textarea" name="comment" rows="4" cols="30" minlength="10" maxlength="50"></textarea>
+      <br>
+      <br>
+      <!--Datuma un laika ievade -->
+      <label for="datetime">Datums, laiks</label>
+      <input type="datetime-local" id="datetime" name="datetime">
+      <br>
+      <br>
+
+      
+
+      <!-- Iesniegšanas poga -->
+      <!--<input type="submit" value="Iesniegt formu">
+      <!-- Formas iztīrīšana (reset) ar HTML5 -->
+      <input type="reset" value="Iztīrīt ar HTML5">
+      <!-- Formas iztīrīšana ar JS -->
+      <input type="button" value="Iztīrīt ar JavaScript" onclick="iztiritFormu()">
+
+
+
+      <!--Elementa krāsas maiņas poga-->
+      <input type="button" value="Mainīt krāsu" onclick="mainitKrasu()"> 
+       
+
+
+
+      <!--Visu lauku satura izvade--> <!--HTML lapā kur ielikts, ievietot Script.js failu pēc form beigām <p id=demo></p> katram js failam kas apskatīts JavaScript failā
+      
+      
+      -->
+      <!--<input type="button" value="Izvadīt laukus" onclick="lauki()">
+      <!--Izvadīt Vārda lauka izvadītos datus-->
+      <!--<input type="button" value="Vārda lauka izvade" onclick="vards()">
+      <script src="..."></script> -->
+
+      <!--<input type="button" value="Izvadīt laukus" onclick="">
+      <!--Izvadīt Vārda lauka izvadītos datus-->
+      
+      
+
+
+
+
+
+      <br> <br>
+      <!--Iesniegšanas poga-->
+      <input type="submit" value="Iesniegt formu">
+
+
+      <!-- Drošības lauki saucas "captcha" -->
+    </form>
+
+    
+
+
+
+    <hr>
+    <h5>
+      <p>
+        <a href="index.html" target="blanc_" class="SadalasLeja">GALVENĀ LAPA</a>
+        <a href="yujin.html" target="_new" class="SadalasLeja">GRAFISKAIS STĀSTS</a>
+        <a href="Pakalpojumi.html" target="_new" class="SadalasLeja" >PAKALPOJUMI</a>
+        <a href="Kontakti.html" target="_new" class="SadalasLeja">KONTAKTI</a>
+        <a href="Praktiskie_darbi.html" target="_new" class="sadalas footer">INTERNETA VEIKALS</a>
+        <a href="Blogs.html" target="_new" class="SadalasLeja1">AKCIJAS</a>
+      </p>
+    </h5>
+
+    <hr>
+    <p>
+      <div>
+      <p>
+        <img src="Virtual_Identity_Logo_Sterns_Jurgis_Copyright.jpg" class="VI_logo" width="250px" title="&copy Sterns Jurgis"; >
+        </div>       
+    </p>
+    <p> <b>SIA "Virtual Identity"</b>
+    <br> Adrese: Bukaišu iela 3, Rīga, LV-1004 Latvija 
+    <br> e-pasts: info@virtualidentity.com
+    <br> tel. (+371) 12345678
+    </p>
+
+    <footer>
+      <p>Copyright &copy 2021 SIA "Virtual Identity". All rights reserved. </p>
+      <p>Mājaslapas izstrāde:
+        <a href="https://www.linkedin.com/in/jurgis-sterns-240453184/" target ="_new">Jurgis Sterns</a>
+      </p>
+    
+    </footer>
+
+    <script src="formas.js"></script>
+
+    
+
+
+  </body>
+
+  
+      
+  
+</html>
+  

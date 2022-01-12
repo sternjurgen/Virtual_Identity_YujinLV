@@ -1,0 +1,330 @@
+  body  { 
+  width: 80% !important; /*vēlamais lapas platums */
+  width: 200px; /* minimālais platums*/
+  max-width: 900px;
+  margin: auto;
+  background: darkseagreen ;
+  }
+  
+  
+
+     /* maksimālais platums */
+  /* 1920x1080 --900px  1366x768 -- */
+  /*margin: auto; /*apmale ārpus elementa*/
+  /*background-color: darkkhaki*/
+
+/* margin auto - automātiskas apmales visās pusēs
+margin: 10px - 10px apmale visās pusēs
+margin 10px 20px - augšā, pa labi, apakšā, pa kreisi
+margin: 5px 10px 20px 30px - secīgi: augšā, pa labi, apakša, pa kreisi
+
+Atrašanās vietas:
+margin-top: px, 
+margin-right: 
+margin-bottom: 
+margin-left - pa kreisi
+ */
+
+/* Fona īpašības: 
+background-color: green; fona krāsa
+background-image: url ("attēla adrese"; fona attēls. krāsa un fona attēls.
+Var norādīt web failu vai paši savu ienesto failu replitā.
+
+*/
+/*
+background: black url("https://www.slashgear.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg"); */
+
+/*fona attēla atkārtojums:
+background : url ("") repeat-x; atkārto attēlu horizontāli
+backround: url ("") repeat-y vertikāli
+repeat abos virzienos
+no repeat - fona attēlu neatkārto*/
+
+/*
+
+a.poga:link, a.poga:visited {
+  background-color: 
+  color: white;
+  padding: 14px 35px;
+  display: inline-block;
+  text-decoration: none; 
+  text-align: center;
+  border-radius: 5px 25px 15px 40px; 
+  width: 125px;
+  height: 30px;
+  font-size: 15px;
+}
+
+a.poga:hover, a.poga:active {
+  background-color: goldenrod;
+}
+*/
+
+
+nav ul {
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+nav {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 12px;
+  text-align: center;
+
+}
+
+
+li.navi a {
+display: block;
+color: white;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li.navi: hover {
+  background-color: #BBB;
+  color: black;
+}
+
+ol.hori {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: darkseagreen ;
+  overflow:hidden;
+}
+
+li.hori {
+  float: left;
+  width: 25%;
+  border-right: 1px solid #E8B9FF;
+}
+
+li.hori a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
+
+li.hori a:hover {
+  background-color: burlywood ;
+  color: black ;
+
+}
+
+/*AuK, AuL, ApL, ApK* visi stūri vienādi boder-radius: 10px ; /
+
+
+  /*kā novietosies elements* inline-block ir kā viena līnija, līnijas augstumā, kā bloks caur F12 rinki sabīda atstarpi. ja vienkārši block, text decoration none nav pasvītrots*/
+
+
+
+}
+
+
+li {
+  list-style-type: none;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+  margin-left:10px;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 10px;
+  background-color: yellowgreen;
+
+}
+
+a.SadalasLeja {
+  padding-right: 30px
+}
+
+a.SadalasLeja1 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+
+
+
+header, body, footer {
+  background-color: darkseagreen; 
+  padding-left: 40px; /*padding ir atstarpe kreisā pusē lapai un iekšpusē*/
+  padding-top: 10px;
+  padding-bottom: 10px ;/*padding*/
+}
+
+
+
+/* ID (identidikatora) izmantošana: ID nedrīkst sākties ar ciparu!, nedrīkst ID sastāvēt tikai no cipariem 123456965; ID nedrīkst atkārtoties vienā HTML faila ietvaros! */
+
+blockquote {
+  font-family: "Gemunu Libre", sans-serif;
+  //font-size: 15px;
+  text-align: center;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+form {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+form, field, fieldset, input, label, optgroup, option, {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+label {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+input {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+field {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+fieldset {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+legend {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+fieldset.dzimums {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+input.radiosieviete {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+input.radiovirietis {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+
+optgroup {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+optgroup.virspuse {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+option {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+
+
+
+footer {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+img.Yujin {
+  vertical-align: middle;
+  border-radius: 25px 25px 25px 25px;
+}
+
+img.jurgis_sterns {
+  vertical-align: middle;
+  border-radius: 25px 25px 25px 25px;
+}
+
+img.Yujin_logo {
+  vertical-align: middle;
+  border-radius: 25px 25px 25px 25px;
+}
+
+li.yujin {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+
+
+
+
+
+#raksts1 {
+  background-image: ur1 ("");
+  color: white;
+  margin-right: 30px;
+  padding: 14px 10px;
+
+
+}
+
+#raksts2:hover {
+
+/*hover norāda kā mainīsies stils, kad uz elementa novietos peles kursoru*/
+background: rgb(239, 216, 255); /*rgb norāda krāsas katrai vērtībai 0-255*/
+padding: 10px;
+margin-right: 35px; 
+
+}
+
+/*klašu izmantošana:
+klases var atkārtoties vienā html failā cik reizes vajadzīgs. Klases var kombinēt.
+
+border-green
+
+id="cilv-vards" */
+
+ nav.language1 {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+
+}
+
+table, th {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+}
+
+button {
+  background: burlywood ;
+  font-family: "Gemunu Libre", sans-serif;
+  border-style: outset; 
+
+
+}
+
+
+
+
+
+
